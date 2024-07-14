@@ -43,7 +43,7 @@ export default function Home() {
           <CardContent>
             <div className="flex flex-col gap-4">
               {SOCIALS.map((social) => (
-                <Button asChild>
+                <Button key={social.name} asChild>
                   <Link
                     href={social.url}
                     target="_blank"
