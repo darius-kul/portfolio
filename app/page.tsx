@@ -23,8 +23,8 @@ const SOCIALS = [
 export default function Home() {
   return (
     <main className=" bg-black min-h-screen flex justify-center items-center">
-      <div className="p-6">
-        <Card className="bg-[#1F1F1F] max-w-[400px] border-none box shadow-card_custom">
+      <div className="p-6 w-full">
+        <Card className="bg-[#1F1F1F] max-w-[384px] border-none box shadow-card_custom mx-auto">
           <CardHeader>
             <Image
               src="/darius-img.jpg"
@@ -33,11 +33,14 @@ export default function Home() {
               height={88}
               className="rounded-full m-auto"
             />
-            <CardTitle className="text-white !mt-[24px] block">
+            <CardTitle className="text-white !mt-[24px] block font-semibold text-center">
               Darius Kulevičius
             </CardTitle>
             <CardDescription className="text-[#C4F82A] mx-auto font-bold">
               Kaunas, Lithuania
+            </CardDescription>
+            <CardDescription className="text-white mx-auto !mt-6">
+              Full Stack Developer
             </CardDescription>
           </CardHeader>
           <CardContent>
